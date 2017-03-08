@@ -56,8 +56,11 @@ for(var i=0; i<response.length; i++){
 	var charDate = $('<p>').addClass('date')
 		.html(response[i].pub_date);
 
-	var charUrl = $('<p>').addClass('url')
-		.html(response[i].web_url);	
+	var charUrl = $("<a>")
+		.addClass('url')
+		.attr('href', response[i].web_url)
+		.attr('target', '_blank')
+		.html(response[i].web_url);
 
 	$('<div>').addClass('article-content')
 		.append(charTitle,charAuthor,charSection,charDate,charUrl)
