@@ -29,13 +29,23 @@ body {
 	margin-bottom: 0px;
 }
 
+.article-title {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.url {
+	font-size: 10px;
+	color: lightslategray;
+}
+
 .resultsArea {
 	border: solid 1px midnightblue;
 }
 
 .article-content {
 	background-color: lightgray;
-	padding: 10px;
+	padding: 20px;
 	margin-top: 10px;
 	margin-bottom: 20px;
 }
