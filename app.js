@@ -31,7 +31,7 @@ url += '?' + $.param({
 
 $.ajax({
   url: url,
-  method: 'GET',
+  method: 'GET'
 }).done(function(result) {
   console.log(result);
 
@@ -41,8 +41,14 @@ for(var i=0; i<response.length; i++){
 	var charTitle = $('<p>').addClass('article-title')
 		.html(response[i].headline.main);
 
-	var charAuthor = $('<p>').addClass('author')
-		.html(response[i].byline.original);
+	if(response[i].byline == null){
+        var charAuthor = $('<p>').addClass('author')
+            .html("");
+	}
+	else {
+        var charAuthor = $('<p>').addClass('author')
+            .html(response[i].byline.original);
+    }
 
 	var charSection = $('<p>').addClass('section')	
 		.html(response[i].section_name);
@@ -75,6 +81,3 @@ $("#search-btn").on("click", function (event) {
 
 
 }); //this is the doc ready
-
-
-	

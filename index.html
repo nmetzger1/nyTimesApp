@@ -30,11 +30,11 @@
                 </div>
                 <div class="form-group">
                     <label for="startDate">Start Year</label>
-                    <input type="text" class="form-control" placeholder="Year">
+                    <input type="text" class="form-control" id="startDate" placeholder="Year">
                 </div>
                 <div class="form-group">
                     <label for="endDate">End Year</label>
-                    <input type="text" class="form-control" placeholder="Year">
+                    <input type="text" class="form-control" id="endDate" placeholder="Year">
                 </div>
                 <button class="btn btn-default" id="search-btn" type="submit"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search</button>
                 <button class="btn btn-default" id="clear-btn" type="submit"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Clear Results</button>
@@ -44,20 +44,15 @@
             <div class="col-sm-12 articleHeader">
                 <h3>Top Articles</h3>
             </div> 
-           
-           </div>      
+            <div class="resultsArea"></div>
+        </div>
     </div>
 
-<!--<script type="text/javascript">
-	$("#search-btn").on("click", function (event) {
-		event.preventDefault();
-		getResults();
-	});
+<script type="text/javascript">
 	$("#clear-btn").on("click", function (event) {
 		event.preventDefault();
-		$(".form-control").empty();
+		$(".resultsArea").empty();
 	});
-</script>-->
+</script>
 </body>
-
 </html>
