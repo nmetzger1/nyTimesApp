@@ -1,3 +1,7 @@
+body {
+	margin-bottom: 20px;
+}
+
 .title {
 	background-color: midnightblue;
 	color: white;
@@ -25,8 +29,15 @@
 	margin-bottom: 0px;
 }
 
-.article {
+.resultsArea {
 	border: solid 1px midnightblue;
+}
+
+.article-content {
+	background-color: lightgray;
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 20px;
 }
 
 .btn-default {
