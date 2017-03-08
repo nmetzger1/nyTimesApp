@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NY Times Search</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="col-sm-12 title">
+            <h1>New York Times Search</h1>
+        </div>
+        <div class="col-sm-12 parameters">
+            <h3>Search Parameters</h3>
+        </div>
+        <div class="col-sm-12 search">
+            <form>
+                <div class="form-group">
+                    <label for="searchString">Search Term</label>
+                    <input type="text" class="form-control" id="searchString" placeholder="Search Term">
+                </div>
+                <div class="form-group">
+                    <label for="numResults">Number of Records to Retrieve</label>
+                    <input type="text" class="form-control" id="numResults" placeholder="Number of Records">
+                </div>
+                <div class="form-group">
+                    <label for="startDate">Start Year</label>
+                    <input type="text" class="form-control" placeholder="Year">
+                </div>
+                <div class="form-group">
+                    <label for="endDate">End Year</label>
+                    <input type="text" class="form-control" placeholder="Year">
+                </div>
+                <button class="btn btn-default" id="search-btn" type="submit"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search</button>
+                <button class="btn btn-default" id="clear-btn" type="submit"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Clear Results</button>
+            </form>
+            </div>
+        <div class="container-second">
+            <div class="col-sm-12 articleHeader">
+                <h3>Top Articles</h3>
+            </div> 
+            <div class="col-sm-12 resultsArea">
+            	<div class="article-content">
+            		<p class="article-title">Article</p>
+            		<p class="author">Author</p>
+            		<p class="section">Section</p>
+            		<p class="date">Date</p>
+            		<p class="url">URL</p>
+            </div>
+           </div>      
+    </div>
+
+<script type="text/javascript">
+	$("#search-btn").on("click", function (event) {
+		event.preventDefault();
+		getResults();
+	});
+	$("#clear-btn").on("click", function (event) {
+		event.preventDefault();
+		$(".form-control").empty();
+	});
+</script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+body {
+	margin-bottom: 20px;
+}
+
+.title {
+	background-color: midnightblue;
+	color: white;
+	text-align: center;
+	padding: 40px;
+}
+
+.parameters {
+	background-color: midnightblue;
+	color: white;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
+.search {
+	padding: 10px;
+	margin-top: 0px;
+	border: solid 1px midnightblue;
+}
+
+.articleHeader {
+	background-color: midnightblue;
+	color: white;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
+.resultsArea {
+	border: solid 1px midnightblue;
+}
+
+.article-content {
+	background-color: lightgray;
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.btn-default {
+	background-color: lightgray;
+}
